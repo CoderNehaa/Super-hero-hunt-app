@@ -1,0 +1,212 @@
+:root {
+    --spdrClr: #761001;
+}
+
+body{
+    text-align: center;
+    font-style: oblique;
+    font-family: cursive;
+    color: var(--spdrClr);
+}
+
+a{
+    text-decoration: none;
+    color: var(--spdrClr);
+}
+
+a:hover{
+ color: #fff;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px var(--spdrClr),
+    0 0 82px var(--spdrClr),
+    0 0 92px var(--spdrClr),
+    0 0 102px var(--spdrClr),
+    0 0 151px var(--spdrClr);   
+}
+
+button{
+    letter-spacing: 0.8;
+    width: 130px;
+    margin: 5px;
+    background-color: #761001;
+    color:white;
+    border: none;
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+/* Background video */
+
+.bgVideo{
+    min-height: 100%;
+    min-width: 100%;
+    right: 0%;
+    position: fixed;
+    bottom: 0%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* Header */
+
+header{
+    color: var(--spdrClr);
+    letter-spacing: 1;
+    font-size: 25px;
+}
+
+#heading{
+    flex-wrap: wrap;   
+}
+
+#heading h1{
+    font-size: -webkit-xxx-large;
+}
+
+#heading:hover{
+    color: #9d9d9d;
+}
+
+.logo{
+    height: 90px;
+    margin-right: 8px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Search Bar */
+
+#searchBox{
+    font-size: 18px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid var(--spdrClr);
+    background: transparent;
+    padding-left: 10px;
+    margin-top: 50px;
+    height: 35px;
+    width: 500px;
+ }
+
+#search-btn{
+    height: 32px;
+    width: 100px;
+    background-color: var(--spdrClr);
+    opacity: 1;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;   
+}
+
+/* Search results */
+
+#searchResults{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+/* Style of one single result */
+
+#singlResult{
+    margin: 10px;
+    width: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#singlResult img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Common classes */
+
+.z-i-2{
+    position: relative;
+    z-index: 2;
+}
+
+.txt-wht{
+    color: white;
+}
+
+/* Flex element with center items */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For the responsiveness, changes -
+*   Hamberger icon
+*   logo above game name done
+*   searchBox width less
+*/
+
+/* Responsiveness */
+@media screen and (max-width: 700px) {
+    header{
+        font-size: 20px;
+    }
+    #heading{
+        margin-top: 20px;
+    }
+    #heading h1{
+        font-size: xx-large;
+    }
+    .logo{
+        height: 60px;
+    }
+    #searchBox{
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    header{
+        font-size: 15px;
+    }
+    
+    #heading{
+        margin-top: 50px;
+    }
+
+    #heading h1{
+        font-size: x-large;
+        margin :0
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    #searchBox{
+        width: 200px;
+        font-size: 15px;
+    }
+    #search-btn{
+        padding: 3px;
+        font-size: 13px;
+        height: 25px;
+        width: 75px;
+    }
+}
+

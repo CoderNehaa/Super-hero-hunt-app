@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="./assets/images/logo.png">
+    <title id="pageTitle"> Hero-info </title>
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/da6c19888d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./CSS/hero-info.css">
+</head>
+<body>
+     <!-- Header -->
+     <header class="z-i-2">
+
+        <!-- Navbar -->
+        <nav>
+            <a href="./home.html"> <i class="fa-solid fa-home"></i> Home </a>
+            <a href="./favorites.html"> <i class="fa-solid fa-heart"></i> Favorites </a>
+            <a href="./quotes.html"><i class="fa-solid fa-bars-staggered"></i> Super hero quotes</a>
+        </nav>
+
+        <!-- Heading -->
+
+        <div id="heading" class="flex-center">
+        <img class="logo" src="./assets/images/logo.png"/>
+        <h1> Super Hero Hunter App</h1>
+        </div>
+
+        <p> Welcome to the world of superheroes </p>
+
+    </header>
+
+    <div id="info-container" class="neonBorder txt-wht z-i-2">
+        <!-- Data of this div will be rendered via JS file. -->
+    </div>
+    
+    <!-- Background video -->
+    <video autoplay muted loop class="bgVideo">
+        <source src ="./assets/videos/superHero.mp4" type="video/mp4">
+    </video>
+
+    <script src="./JS/hero-info.js"></script>
+</body>
+</html>

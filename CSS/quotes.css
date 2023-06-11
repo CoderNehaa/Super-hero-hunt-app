@@ -1,0 +1,213 @@
+:root {
+    --spdrClr: #761001;
+}
+  
+body{
+    text-align: center;
+    background-color: black;
+}
+
+/* Header */
+
+header{
+    color: var(--spdrClr);
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+#heading:hover{
+    color: #9d9d9d;
+}
+
+.logo{
+    height: 90px;
+    margin-right: 8px;
+}
+
+#heading h1{
+    font-size: -webkit-xxx-large;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Quotes heading */
+
+#quotes-heading{
+    margin: auto;
+    border-radius: 15px;
+    width: 400px;
+    background-color: var(--spdrClr);
+    font-family: math;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0px 6px;
+}
+
+/* Quotes Container */
+
+#quotes-container{
+    font-size: 20px;
+}
+
+/* Quotes */
+
+#quote{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: #761001;
+    /* background:linear-gradient(-45deg, black 0%, var(--spdrClr) 25%, var(--spdrClr) 51%, black 100%); */
+}
+
+#hero-name{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+/* Common classes */
+
+/* White text */
+
+.txt-wht{
+    color: white;
+}
+
+/* Flex element with center items */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex elements having column direction */
+
+.f-d-c{
+    flex-direction: column;
+}
+
+/* Letter spacing */
+
+.l-s-1{
+    letter-spacing: 1;
+}
+
+/* Neon Border */
+
+.neonBorder{
+    border: 3px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem var(--spdrClr),
+    0 0 0.8rem var(--spdrClr),
+    0 0 2.8rem var(--spdrClr),
+    inset 0 0 1.3rem var(--spdrClr); 
+}
+
+/* Neon Text */
+
+.neonText{
+text-shadow:
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px var(--spdrClr),
+    0 0 82px var(--spdrClr),
+    0 0 92px var(--spdrClr),
+    0 0 102px var(--spdrClr),
+    0 0 151px var(--spdrClr);
+}
+
+a{
+    text-decoration: none;
+    color: var(--spdrClr);
+}
+
+a:hover{
+    color: #fff;
+   text-shadow:
+   0 0 10px #fff,
+   0 0 21px #fff,
+   0 0 42px var(--spdrClr),
+   0 0 82px var(--spdrClr),
+   0 0 92px var(--spdrClr),
+   0 0 102px var(--spdrClr),
+   0 0 151px var(--spdrClr);   
+}
+
+/* Responsiveness */
+@media screen and (max-width: 775px) {
+    header{
+        font-size: 20px;
+    }
+    #heading{
+        margin-top: 20px;
+    }
+    #heading h1{
+        font-size: xx-large;
+    }
+    .logo{
+        height: 60px;
+    }
+
+    #quotes-heading{
+     margin-top: 80px;
+     width: 250px;
+     padding: 2px;  
+    }
+
+    #quotes-heading h1{
+        font-size: x-large;
+    }
+    #quote{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 472px) {
+    header{
+        font-size: 15px;
+    }
+
+    #heading{
+        margin-top: 50px;
+    }
+
+    #heading h1{
+        font-size: x-large;
+        margin :0
+    }
+    .logo{
+        height: 40px;
+    }
+    #quotes-heading{
+        margin-top: 50px;
+        width: 250px;
+        padding: 2px;
+        border: 1px solid white;  
+    }
+    #quotes-heading h1{
+        font-size: x-large;
+    }
+    #quotes-container{
+        font-size: 17px;
+    }
+    
+    #quote{
+        width: 80%;
+        padding: 5px;
+    }
+    #hero-name{
+     font-size: 22px;   
+    }
+    #quote p{
+        margin: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="./assets/images/logo.png">
+    <title> Home | Super Hero Hunter App</title>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/da6c19888d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./CSS/home.css">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="z-i-2">
+
+        <!-- Navbar -->
+        <nav>
+            <a href="./favorites.html"> <i class="fa-solid fa-heart"></i> Favorites </a>
+            <a href="./quotes.html"><i class="fa-solid fa-bars-staggered"></i> Super hero quotes</a>
+        </nav>
+
+        <!-- Heading -->
+
+        <div id="heading" class="flex-center">
+        <img class="logo" src="./assets/images/logo.png"/>
+        <h1> Super Hero Hunter App</h1>
+        </div>
+
+        <p> Welcome to the world of superheroes </p>
+
+    </header>
+
+    <!-- Search bar -->
+    <div id="searchBar" class="z-i-2">
+        <input id="searchBox" class="txt-wht" type="search" autocomplete="off" placeholder="Type super hero name here...">
+        <button id="search-btn" class="txt-wht"> Search </button>
+    </div>
+
+    <div id="searchResults" class="z-i-2">     
+    </div>
+
+    <!-- Background video -->
+    <video autoplay muted loop class="bgVideo">
+        <source src ="./assets/videos/superHero.mp4" type="video/mp4">
+    </video>
+
+    <!-- External JS file -->
+    <script data-main="scripts/main" src="./JS/home.js"></script>
+
+</body>
+</html>
+
