@@ -19,4 +19,4 @@ This web application allows you to search for superheroes, view detailed informa
 
  Happy superhero hunting! 🦸‍♂️🦸‍♀️ 
 
- 
+ [LIVE PROJECT](https://codernehaa.github.io/Super-hero-hunt-app/home.html)
