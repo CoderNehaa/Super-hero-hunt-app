@@ -1,7 +1,7 @@
 # Superhero Hunt App
 
 Welcome to the Superhero Hunt App!
-This web application allows you to search for superheroes, view detailed information about them, and even add your favorite superheroes to a personalized favorites list. Additionally, you can explore famous superquotes said by these superheroes. The app is developed using vanilla JavaScript, ensuring a lightweight and efficient user experience.
+This website allows user to search for superheroes, view detailed information about them, and add favorite superheroes to a personalized favorites list. Additionally, user can explore famous superquotes said by these superheroes. The app is developed using vanilla JavaScript, ensuring a lightweight and efficient user experience.
 
 ## Features
 
